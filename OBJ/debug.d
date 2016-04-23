@@ -1,0 +1,17 @@
+..\OBJ\debug.o: ..\HARDWARE\CH376\DEBUG.C
+..\OBJ\debug.o: ..\SYSTEM\delay\delay.h
+..\OBJ\debug.o: ..\SYSTEM\sys\sys.h
+..\OBJ\debug.o: ..\USER\stm32f10x.h
+..\OBJ\debug.o: ..\CORE\core_cm3.h
+..\OBJ\debug.o: d:\Keil\ARM\RV31\Inc\stdint.h
+..\OBJ\debug.o: ..\USER\system_stm32f10x.h
+..\OBJ\debug.o: ..\USER\stm32f10x_conf.h
+..\OBJ\debug.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+..\OBJ\debug.o: ..\USER\stm32f10x.h
+..\OBJ\debug.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+..\OBJ\debug.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+..\OBJ\debug.o: ..\STM32F10x_FWLib\inc\misc.h
+..\OBJ\debug.o: ..\SYSTEM\usart\usart.h
+..\OBJ\debug.o: d:\Keil\ARM\RV31\Inc\stdio.h
+..\OBJ\debug.o: ..\HARDWARE\CH376\DEBUG.H
+..\OBJ\debug.o: ..\HARDWARE\CH376\CH376INC.H

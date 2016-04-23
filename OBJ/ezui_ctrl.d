@@ -1,0 +1,16 @@
+..\OBJ\ezui_ctrl.o: ..\LCD_Driver\EzUI_Ctrl.c
+..\OBJ\ezui_ctrl.o: ..\LCD_Driver\LCD_Config.h
+..\OBJ\ezui_ctrl.o: ..\SYSTEM\usart\usart.h
+..\OBJ\ezui_ctrl.o: d:\Keil\ARM\RV31\Inc\stdio.h
+..\OBJ\ezui_ctrl.o: ..\SYSTEM\sys\sys.h
+..\OBJ\ezui_ctrl.o: ..\USER\stm32f10x.h
+..\OBJ\ezui_ctrl.o: ..\CORE\core_cm3.h
+..\OBJ\ezui_ctrl.o: d:\Keil\ARM\RV31\Inc\stdint.h
+..\OBJ\ezui_ctrl.o: ..\USER\system_stm32f10x.h
+..\OBJ\ezui_ctrl.o: ..\USER\stm32f10x_conf.h
+..\OBJ\ezui_ctrl.o: ..\STM32F10x_FWLib\inc\stm32f10x_gpio.h
+..\OBJ\ezui_ctrl.o: ..\USER\stm32f10x.h
+..\OBJ\ezui_ctrl.o: ..\STM32F10x_FWLib\inc\stm32f10x_rcc.h
+..\OBJ\ezui_ctrl.o: ..\STM32F10x_FWLib\inc\stm32f10x_usart.h
+..\OBJ\ezui_ctrl.o: ..\STM32F10x_FWLib\inc\misc.h
+..\OBJ\ezui_ctrl.o: ..\LCD_Driver\EzUI_Ctrl.h
