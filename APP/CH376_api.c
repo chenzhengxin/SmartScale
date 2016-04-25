@@ -87,8 +87,7 @@ int InitUSB(void)
 		ToWarn++;
 		delay_ms( 100 );
 		if(ToWarn == 20){
-		/*??o?? p???U?¨¢q ????*/
-					
+		    return 0;		
 		}
 	}
 

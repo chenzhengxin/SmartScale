@@ -831,6 +831,7 @@ void lcdopt_click_root_opt_button_sure(void)
 	
     EzUI_NumberEdit_ReadVarFloat(ROOT_OPT_CONTROL_RATE, &rate);
 	fileopt_set_water_rate(&rate);
+	EzUI_SetNowActiveGui(OPT_OK_WARNING_INDEX);
     UART_DMA_Tx_Enable();
 	lcdopt_mgr_str.cur_rate = rate;
 

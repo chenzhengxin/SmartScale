@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\UCOSII-1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\UCOSII-1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Sat Apr 23 20:39:28 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Mon Apr 25 15:44:35 2016
 <BR><P>
 <H3>Maximum Stack Usage =        984 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -4181,6 +4181,7 @@ Global Symbols
 <LI><a href="#[2f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_pwd_manage_button_sure
 <LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_bill_export
 <LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_list_export
+<LI><a href="#[2b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_sure
 <LI><a href="#[29]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_auth_button_sure
 <LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_setting_button_restore
 <LI><a href="#[26]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_setting_button_sure
@@ -4639,12 +4640,13 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[2b]"></a>lcdopt_click_root_opt_button_sure</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[2b]"></a>lcdopt_click_root_opt_button_sure</STRONG> (Thumb, 34 bytes, Stack size 8 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 480 + Unknown Stack Size
 <LI>Call Chain = lcdopt_click_root_opt_button_sure &rArr; fileopt_set_water_rate &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
 <LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[233]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[224]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_ReadVarFloat
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
@@ -4680,7 +4682,7 @@ Global Symbols
 <P><STRONG><a name="[2e]"></a>lcdopt_click_root_opt_button_quit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcdopt.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[2f]"></a>lcdopt_click_pwd_manage_button_sure</STRONG> (Thumb, 310 bytes, Stack size 120 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[2f]"></a>lcdopt_click_pwd_manage_button_sure</STRONG> (Thumb, 308 bytes, Stack size 120 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 624<LI>Call Chain = lcdopt_click_pwd_manage_button_sure &rArr; fileopt_get_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
@@ -5282,7 +5284,7 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CloseUSBFile
 </UL>
 
-<P><STRONG><a name="[99]"></a>InitUSB</STRONG> (Thumb, 156 bytes, Stack size 80 bytes, ch376_api.o(.text))
+<P><STRONG><a name="[99]"></a>InitUSB</STRONG> (Thumb, 162 bytes, Stack size 80 bytes, ch376_api.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160 + Unknown Stack Size
 <LI>Call Chain = InitUSB &rArr; CH376DiskQuery &rArr; CH376SendCmdWaitInt &rArr; Wait376Interrupt &rArr; CH376GetIntStatus &rArr; xReadCH376Data &rArr; delay_us
 </UL>
