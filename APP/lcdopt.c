@@ -6,7 +6,7 @@
 #include "CH376_api.h"
 
 
-#define CONTROL_NUM  44
+#define CONTROL_NUM  45
 
 void lcdopt_click_bootui_icon_work(void);
 void lcdopt_click_bootui_icon_admin(void);
@@ -16,6 +16,7 @@ void lcdopt_click_work_button_flay(void);
 void lcdopt_click_work_button_zero(void);
 void lcdopt_click_work_button_total(void);
 void lcdopt_click_work_button_quit(void);
+void lcdopt_click_work_control_worker_num(void);
 void lcdopt_click_work_frame_print_sure(void);
 void lcdopt_click_goods_opt_button_choose(void);
 void lcdopt_click_goods_opt_button_return(void);
@@ -87,6 +88,7 @@ lcdopt_control_opt_str opt_str[CONTROL_NUM] = {
 {WORK_BUTTON_ZERO,			  lcdopt_click_work_button_zero},
 {WORK_BUTTON_TOTAL, 		  lcdopt_click_work_button_total},
 {WORK_BUTTON_QUIT,			  lcdopt_click_work_button_quit},
+{WORK_CONTROL_WORKER_NUM,     lcdopt_click_work_control_worker_num},
 {BALL_FRAME_PRINT_SURE,       lcdopt_click_work_frame_print_sure},
 {GOODS_OPT_BUTTON_CHOOSE,	  lcdopt_click_goods_opt_button_choose},
 {GOODS_OPT_BUTTON_RETURN,	  lcdopt_click_goods_opt_button_return},
@@ -316,6 +318,28 @@ void lcdopt_click_work_button_quit(void)
 	EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_TOTAL_PRICE,0.00);
 	EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME," ");
 	EzUI_NumberEdit_SetVarInt(WORK_CONTROL_WORKER_NUM,0);
+	UART_DMA_Tx_Enable();
+}
+
+void lcdopt_click_work_control_worker_num(void)
+{
+	int worker_num = 0;
+	char worker_id[20] = {0};
+	char worker_name[20] = {0};
+	char card_id[20] = {0};
+
+	EzUI_NumberEdit_ReadVarInt(WORK_CONTROL_WORKER_NUM, &worker_num);
+	sprintf(worker_id, "%d", worker_num);
+	fileopt_find_worker_msg_by_workid(worker_id, worker_name, 20, card_id, 20);
+
+	if (worker_name[0] != 0) {
+		EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, worker_name);
+	} else {
+		EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, " ");
+		EzUI_NumberEdit_SetVarInt(WORK_CONTROL_WORKER_NUM, 0);
+		EzUI_SetNowActiveGui(OPT_FAIL_WARNING_INDEX);
+	}
+
 	UART_DMA_Tx_Enable();
 }
 
@@ -1016,10 +1040,20 @@ int lcdopt_printf_card_id(void)
 			}
 			case WORK_UI_INDEX:
 			{
-				char name[30] = {0};
+				int work_id = 0;
+			    char worker_name[20] = {0};
+				char worker_id[20] = {0};
 
-				//fileopt_find_worker_name_by_cardid(id, name, 30);
-                EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME,name);
+				fileopt_find_worker_msg_by_cardid(id, worker_name, 20, worker_id, 20);
+				work_id = atoi(worker_id);
+				if (worker_name[0] != 0 && worker_id[0] != 0) {
+                	EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, worker_name);
+					EzUI_NumberEdit_SetVarInt(WORK_CONTROL_WORKER_NUM, work_id);
+				} else {
+					EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, " ");
+					EzUI_NumberEdit_SetVarInt(WORK_CONTROL_WORKER_NUM, 0);
+				}
+				UART_DMA_Tx_Enable();
 				break;
 			}
 			case ADMIN_ENTER_UI_INDEX:

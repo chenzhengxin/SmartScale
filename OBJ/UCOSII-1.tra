@@ -60,7 +60,7 @@
 ### ADS-LD Output File: '..\OBJ\UCOSII-1.axf'
 ### ADS-LD Command File: '..\OBJ\UCOSII-1.lnp'
 ### Checking for dirty Components...
-### Creating CmdFile '..\OBJ\UCOSII-1.lnp', Handle=0x00000310
+### Creating CmdFile '..\OBJ\UCOSII-1.lnp', Handle=0x000003C8
 ### Writing '.lnp' file
 ### ADS-LD Command file '..\OBJ\UCOSII-1.lnp' is ready.
 ### ADS-LD: About to start ADS-LD Thread.
