@@ -309,7 +309,30 @@ void lcdopt_click_work_button_zero(void)
 
 void lcdopt_click_work_button_total(void)
 {
-    
+	int worker_num = 0;
+	char worker_id[20] = {0};
+	char worker_name[20] = {0};
+	char card_id[20] = {0};
+	total_msg msg = {0};
+	float price = 0.0;
+	float weight = 0.0;
+
+	EzUI_NumberEdit_ReadVarInt(WORK_CONTROL_WORKER_NUM, &worker_num);
+	sprintf(worker_id, "%d", worker_num);
+	fileopt_find_worker_msg_by_workid(worker_id, worker_name, 20, card_id, 20);
+
+	if (worker_name[0] != 0 && card_id[0] != 0) {
+		fileopt_read_total_msg(card_id, &msg);
+		price = string_to_float(msg.total_price);
+		weight = string_to_float(msg.total_weight);
+		EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_WEIGHT_VAL, weight);
+		EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_TOTAL_PRICE, price);
+	} else {
+
+		EzUI_SetNowActiveGui(OPT_FAIL_WARNING_INDEX);
+	}
+	
+    UART_DMA_Tx_Enable();
 }
 
 void lcdopt_click_work_button_quit(void)
@@ -332,7 +355,7 @@ void lcdopt_click_work_control_worker_num(void)
 	sprintf(worker_id, "%d", worker_num);
 	fileopt_find_worker_msg_by_workid(worker_id, worker_name, 20, card_id, 20);
 
-	if (worker_name[0] != 0) {
+	if (worker_name[0] != 0 && card_id[0] != 0) {
 		EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, worker_name);
 	} else {
 		EzUI_StringEdit_SetString(WORK_CONTROL_WORKER_NAME, " ");

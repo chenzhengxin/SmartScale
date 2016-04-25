@@ -3,7 +3,7 @@
 <title>Static Call Graph - [..\OBJ\UCOSII-1.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image ..\OBJ\UCOSII-1.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Mon Apr 25 16:21:28 2016
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 4.1 [Build 894]: Last Updated: Mon Apr 25 16:38:31 2016
 <BR><P>
 <H3>Maximum Stack Usage =        984 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -1085,8 +1085,8 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_IRQHandler
 <LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Init
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
 <LI><a href="#[16]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_boot_admin_ui_icon_setting
 </UL>
 
@@ -1840,6 +1840,7 @@ Global Symbols
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_opt_button_choose
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_quit
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_zero
 <LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_print
 <LI><a href="#[7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_goods_choose
@@ -3262,22 +3263,22 @@ Global Symbols
 <P><STRONG><a name="[1cc]"></a>mymemcpy</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, malloc.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = mymemcpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
-<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_current_goods
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
+<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_current_goods
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
 </UL>
 
@@ -3286,22 +3287,22 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[3]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_init
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
-<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
+<LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
 </UL>
 
 <P><STRONG><a name="[3]"></a>mem_init</STRONG> (Thumb, 38 bytes, Stack size 4 bytes, malloc.o(.text))
@@ -3336,26 +3337,26 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[1fe]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ff_memfree
 <LI><a href="#[1cb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myrealloc
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
@@ -3370,29 +3371,29 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;exfuns_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[1fb]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ff_memalloc
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_weight_unit
@@ -3486,29 +3487,29 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_weight_unit
 </UL>
@@ -3524,7 +3525,7 @@ Global Symbols
 <LI><a href="#[200]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clmt_clust
 <LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<BR>[Called By]<UL><LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_gets
 </UL>
 
@@ -3541,15 +3542,15 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[216]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_printf
 <LI><a href="#[213]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;putc_bfd
 <LI><a href="#[215]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_puts
@@ -3578,29 +3579,29 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
-<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
+<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mf_copy
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_weight_unit
 </UL>
@@ -3616,11 +3617,11 @@ Global Symbols
 <LI><a href="#[200]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;clmt_clust
 <LI><a href="#[1dd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;create_chain
 </UL>
-<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 </UL>
 
 <P><STRONG><a name="[205]"></a>f_opendir</STRONG> (Thumb, 136 bytes, Stack size 40 bytes, ff.o(.text), UNUSED)
@@ -3738,8 +3739,8 @@ Global Symbols
 <LI><a href="#[1d5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;move_window
 <LI><a href="#[1e5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mem_cpy
 </UL>
-<BR>[Called By]<UL><LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<BR>[Called By]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
 </UL>
 
 <P><STRONG><a name="[20f]"></a>f_getlabel</STRONG> (Thumb, 190 bytes, Stack size 72 bytes, ff.o(.text), UNUSED)
@@ -3779,22 +3780,22 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
 </UL>
-<BR>[Called By]<UL><LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
 </UL>
 
@@ -4017,6 +4018,7 @@ Global Symbols
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_boot_admin_ui_icon_root_setting
 <LI><a href="#[10]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_opt_button_return
 <LI><a href="#[c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_quit
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_bootui_icon_work
 <LI><a href="#[23f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_clear_choose_goods_list
 <LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_clear_del_goods_list
@@ -4038,6 +4040,7 @@ Global Symbols
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_control_worker_num
 <LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_button_readd
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 </UL>
 
 <P><STRONG><a name="[225]"></a>EzUI_NumberEdit_ReadVarFloat</STRONG> (Thumb, 96 bytes, Stack size 32 bytes, ezui_ctrl.o(.text))
@@ -4201,6 +4204,7 @@ Global Symbols
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_admin_button_sure
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_opt_button_choose
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_print
 </UL>
 
@@ -4214,10 +4218,11 @@ Global Symbols
 <LI><a href="#[107]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_dmul
 <LI><a href="#[108]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_d2f
 </UL>
-<BR>[Called By]<UL><LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<BR>[Called By]<UL><LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[269]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_weight_unit
 </UL>
 
@@ -4335,7 +4340,21 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[b]"></a>lcdopt_click_work_button_total</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[b]"></a>lcdopt_click_work_button_total</STRONG> (Thumb, 160 bytes, Stack size 128 bytes, lcdopt.o(.text))
+<BR><BR>[Stack]<UL><LI>Max Depth = 792 + Unknown Stack Size
+<LI>Call Chain = lcdopt_click_work_button_total &rArr; fileopt_read_total_msg &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
+</UL>
+<BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
+<LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
+<LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
+<LI><a href="#[221]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_ReadVarInt
+<LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_SetVarFloat
+<LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
+<LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
+<LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
+</UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
 <P><STRONG><a name="[c]"></a>lcdopt_click_work_button_quit</STRONG> (Thumb, 40 bytes, Stack size 8 bytes, lcdopt.o(.text))
@@ -4348,7 +4367,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[d]"></a>lcdopt_click_work_control_worker_num</STRONG> (Thumb, 112 bytes, Stack size 72 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[d]"></a>lcdopt_click_work_control_worker_num</STRONG> (Thumb, 118 bytes, Stack size 72 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 648 + Unknown Stack Size
 <LI>Call Chain = lcdopt_click_work_control_worker_num &rArr; fileopt_find_worker_msg_by_workid &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4368,12 +4387,12 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_work_frame_print_sure &rArr; __2sprintf &rArr; _printf_char_common &rArr; __printf
 </UL>
 <BR>[Calls]<UL><LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[f]"></a>lcdopt_click_goods_opt_button_choose</STRONG> (Thumb, 126 bytes, Stack size 32 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[f]"></a>lcdopt_click_goods_opt_button_choose</STRONG> (Thumb, 164 bytes, Stack size 32 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 108<LI>Call Chain = lcdopt_click_goods_opt_button_choose &rArr; lcdopt_choose_goods_flag_check &rArr; EzUI_Combox_ReadSel &rArr; EzUI_BodyReadVarCommand &rArr; UART_SendPacked
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
@@ -4395,11 +4414,11 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[11]"></a>lcdopt_click_admin_button_sure</STRONG> (Thumb, 180 bytes, Stack size 80 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[11]"></a>lcdopt_click_admin_button_sure</STRONG> (Thumb, 144 bytes, Stack size 80 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 584<LI>Call Chain = lcdopt_click_admin_button_sure &rArr; fileopt_get_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4420,7 +4439,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 528 + Unknown Stack Size
 <LI>Call Chain = lcdopt_click_boot_admin_ui_icon_add_card &rArr; fileopt_get_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<BR>[Calls]<UL><LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
 <LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_SetVarInt
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
@@ -4444,7 +4463,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 472<LI>Call Chain = lcdopt_click_boot_admin_ui_icon_root_setting &rArr; fileopt_get_water_rate &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[220]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_SetVarFloat
 </UL>
@@ -4461,8 +4480,8 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_add_card_button_add &rArr; fileopt_create_card &rArr; fileopt_find_worker &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4477,7 +4496,7 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_add_card_button_readd &rArr; fileopt_reapply_card_by_work_id &rArr; search_by_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4512,7 +4531,7 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[1e]"></a>lcdopt_click_del_card_control_worker_num</STRONG> (Thumb, 140 bytes, Stack size 72 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[1e]"></a>lcdopt_click_del_card_control_worker_num</STRONG> (Thumb, 152 bytes, Stack size 72 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 648 + Unknown Stack Size
 <LI>Call Chain = lcdopt_click_del_card_control_worker_num &rArr; fileopt_find_worker_msg_by_workid &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4532,7 +4551,7 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_del_card_button_del &rArr; fileopt_del_worker_msg &rArr; fileopt_cnt_worker_pos &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4550,12 +4569,12 @@ Global Symbols
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[21]"></a>lcdopt_click_goods_button_sure</STRONG> (Thumb, 94 bytes, Stack size 24 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[21]"></a>lcdopt_click_goods_button_sure</STRONG> (Thumb, 84 bytes, Stack size 24 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 632 + Unknown Stack Size
 <LI>Call Chain = lcdopt_click_goods_button_sure &rArr; fileopt_add_goods &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4597,7 +4616,7 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_goods_del_button_del &rArr; fileopt_del_goods &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
 <LI><a href="#[240]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_del_goods_flag_check
 <LI><a href="#[23e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_clear_del_goods_list
 <LI><a href="#[23a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_show_del_goods_list
@@ -4630,7 +4649,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = lcdopt_click_setting_button_restore &rArr; EzUI_SetNowActiveGui &rArr; UART_SendPacked
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_copy_flash_to_sd
+<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_copy_flash_to_sd
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
@@ -4642,8 +4661,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 560<LI>Call Chain = lcdopt_click_root_auth_button_sure &rArr; fileopt_get_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
@@ -4666,7 +4685,7 @@ Global Symbols
 <LI>Call Chain = lcdopt_click_root_opt_button_sure &rArr; fileopt_set_water_rate &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[225]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_ReadVarFloat
 </UL>
@@ -4681,7 +4700,7 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenUSBFile
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUSB
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CloseUSBFile
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
@@ -4695,7 +4714,7 @@ Global Symbols
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;OpenUSBFile
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUSB
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CloseUSBFile
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
@@ -4703,11 +4722,11 @@ Global Symbols
 <P><STRONG><a name="[2f]"></a>lcdopt_click_root_opt_button_quit</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, lcdopt.o(.text))
 <BR>[Address Reference Count : 1]<UL><LI> lcdopt.o(.data)
 </UL>
-<P><STRONG><a name="[30]"></a>lcdopt_click_pwd_manage_button_sure</STRONG> (Thumb, 308 bytes, Stack size 120 bytes, lcdopt.o(.text))
+<P><STRONG><a name="[30]"></a>lcdopt_click_pwd_manage_button_sure</STRONG> (Thumb, 312 bytes, Stack size 120 bytes, lcdopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 624<LI>Call Chain = lcdopt_click_pwd_manage_button_sure &rArr; fileopt_get_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<BR>[Calls]<UL><LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[22a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_Combox_ReadSel
 <LI><a href="#[228]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_ReadString
@@ -4731,13 +4750,13 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[16b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;UART_DMA_Tx_Enable
 <LI><a href="#[ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadCardId
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
 <LI><a href="#[234]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_SetNowActiveGui
 <LI><a href="#[227]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_StringEdit_SetString
 <LI><a href="#[21f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;EzUI_NumberEdit_SetVarInt
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_task
 </UL>
@@ -4769,15 +4788,15 @@ Global Symbols
 <LI>Call Chain = lcdopt_init &rArr; fileopt_get_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Weight_QuPi
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_water_rate
 <LI><a href="#[236]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_i2f
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
 </UL>
 
-<P><STRONG><a name="[254]"></a>mf_copy</STRONG> (Thumb, 218 bytes, Stack size 40 bytes, fileopt.o(.text), UNUSED)
+<P><STRONG><a name="[255]"></a>mf_copy</STRONG> (Thumb, 218 bytes, Stack size 40 bytes, fileopt.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[1ff]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_read
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
@@ -4788,18 +4807,18 @@ Global Symbols
 
 <P><STRONG><a name="[336]"></a>fileopt_get_current_price</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fileopt.o(.text), UNUSED)
 
-<P><STRONG><a name="[257]"></a>fileopt_get_current_goods</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, fileopt.o(.text), UNUSED)
+<P><STRONG><a name="[258]"></a>fileopt_get_current_goods</STRONG> (Thumb, 20 bytes, Stack size 16 bytes, fileopt.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 </UL>
 
-<P><STRONG><a name="[258]"></a>fileopt_set_current_price</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, fileopt.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_current_price
+<P><STRONG><a name="[259]"></a>fileopt_set_current_price</STRONG> (Thumb, 116 bytes, Stack size 16 bytes, fileopt.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__set_current_price
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 
-<P><STRONG><a name="[25a]"></a>fileopt_file_init</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, fileopt.o(.text))
+<P><STRONG><a name="[25b]"></a>fileopt_file_init</STRONG> (Thumb, 92 bytes, Stack size 16 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 448<LI>Call Chain = fileopt_file_init &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
@@ -4810,7 +4829,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 </UL>
 
-<P><STRONG><a name="[25b]"></a>fileope_goods_list_init</STRONG> (Thumb, 250 bytes, Stack size 216 bytes, fileopt.o(.text))
+<P><STRONG><a name="[25c]"></a>fileope_goods_list_init</STRONG> (Thumb, 250 bytes, Stack size 216 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 648 + Unknown Stack Size
 <LI>Call Chain = fileope_goods_list_init &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4823,8 +4842,8 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
@@ -4839,8 +4858,8 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 792 + Unknown Stack Size
 <LI>Call Chain = fileopt_init &rArr; fileope_goods_list_init &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[25a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
+<BR>[Calls]<UL><LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_file_init
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[20b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_mkdir
@@ -4850,13 +4869,13 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[239]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memcpy4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[9f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;system_init
 </UL>
 
-<P><STRONG><a name="[246]"></a>fileopt_get_work_id</STRONG> (Thumb, 114 bytes, Stack size 88 bytes, fileopt.o(.text))
+<P><STRONG><a name="[247]"></a>fileopt_get_work_id</STRONG> (Thumb, 114 bytes, Stack size 88 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 520 + Unknown Stack Size
 <LI>Call Chain = fileopt_get_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4866,7 +4885,7 @@ Global Symbols
 <LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_init
@@ -4874,7 +4893,7 @@ Global Symbols
 <LI><a href="#[13]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_boot_admin_ui_icon_add_card
 </UL>
 
-<P><STRONG><a name="[25c]"></a>fileopt_find_worker</STRONG> (Thumb, 86 bytes, Stack size 72 bytes, fileopt.o(.text))
+<P><STRONG><a name="[25d]"></a>fileopt_find_worker</STRONG> (Thumb, 86 bytes, Stack size 72 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504 + Unknown Stack Size
 <LI>Call Chain = fileopt_find_worker &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4885,15 +4904,15 @@ Global Symbols
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<BR>[Called By]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
 </UL>
 
-<P><STRONG><a name="[248]"></a>fileopt_create_card</STRONG> (Thumb, 454 bytes, Stack size 224 bytes, fileopt.o(.text))
+<P><STRONG><a name="[249]"></a>fileopt_create_card</STRONG> (Thumb, 454 bytes, Stack size 224 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 728 + Unknown Stack Size
 <LI>Call Chain = fileopt_create_card &rArr; fileopt_find_worker &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<BR>[Calls]<UL><LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
@@ -4903,14 +4922,14 @@ Global Symbols
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_button_add
 </UL>
 
-<P><STRONG><a name="[25d]"></a>fileopt_cnt_worker_pos</STRONG> (Thumb, 214 bytes, Stack size 208 bytes, fileopt.o(.text))
+<P><STRONG><a name="[25e]"></a>fileopt_cnt_worker_pos</STRONG> (Thumb, 214 bytes, Stack size 208 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 640 + Unknown Stack Size
 <LI>Call Chain = fileopt_cnt_worker_pos &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -4923,39 +4942,39 @@ Global Symbols
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
 </UL>
 
-<P><STRONG><a name="[25e]"></a>fileopt_update_msg</STRONG> (Thumb, 382 bytes, Stack size 120 bytes, fileopt.o(.text), UNUSED)
+<P><STRONG><a name="[25f]"></a>fileopt_update_msg</STRONG> (Thumb, 382 bytes, Stack size 120 bytes, fileopt.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
 </UL>
 
-<P><STRONG><a name="[25f]"></a>fileopt_update_worker_product_msg</STRONG> (Thumb, 270 bytes, Stack size 120 bytes, fileopt.o(.text), UNUSED)
+<P><STRONG><a name="[260]"></a>fileopt_update_worker_product_msg</STRONG> (Thumb, 270 bytes, Stack size 120 bytes, fileopt.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[238]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fadd
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
 </UL>
 
-<P><STRONG><a name="[260]"></a>fileopt_get_1st_2nd_msg</STRONG> (Thumb, 228 bytes, Stack size 160 bytes, fileopt.o(.text), UNUSED)
+<P><STRONG><a name="[261]"></a>fileopt_get_1st_2nd_msg</STRONG> (Thumb, 228 bytes, Stack size 160 bytes, fileopt.o(.text), UNUSED)
 <BR><BR>[Calls]<UL><LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_gets
 <LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
@@ -4964,17 +4983,17 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<BR>[Called By]<UL><LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
 </UL>
 
-<P><STRONG><a name="[261]"></a>fileopt_add_worker_msg</STRONG> (Thumb, 782 bytes, Stack size 488 bytes, fileopt.o(.text), UNUSED)
-<BR><BR>[Calls]<UL><LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<P><STRONG><a name="[262]"></a>fileopt_add_worker_msg</STRONG> (Thumb, 782 bytes, Stack size 488 bytes, fileopt.o(.text), UNUSED)
+<BR><BR>[Calls]<UL><LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[204]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_lseek
@@ -4986,7 +5005,7 @@ Global Symbols
 <LI><a href="#[237]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_fmul
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 
@@ -5001,16 +5020,17 @@ Global Symbols
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_del_card_control_worker_num
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_control_worker_num
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 </UL>
 
-<P><STRONG><a name="[252]"></a>fileopt_find_worker_msg_by_cardid</STRONG> (Thumb, 290 bytes, Stack size 128 bytes, fileopt.o(.text))
+<P><STRONG><a name="[253]"></a>fileopt_find_worker_msg_by_cardid</STRONG> (Thumb, 290 bytes, Stack size 128 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 560 + Unknown Stack Size
 <LI>Call Chain = fileopt_find_worker_msg_by_cardid &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5022,20 +5042,20 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_card_id
 </UL>
 
-<P><STRONG><a name="[249]"></a>fileopt_reapply_card_by_work_id</STRONG> (Thumb, 358 bytes, Stack size 272 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24a]"></a>fileopt_reapply_card_by_work_id</STRONG> (Thumb, 358 bytes, Stack size 272 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 904 + Unknown Stack Size
 <LI>Call Chain = fileopt_reapply_card_by_work_id &rArr; search_by_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<BR>[Calls]<UL><LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_rename
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
@@ -5046,19 +5066,19 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_button_readd
 </UL>
 
-<P><STRONG><a name="[24a]"></a>fileopt_del_worker_msg</STRONG> (Thumb, 308 bytes, Stack size 312 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24b]"></a>fileopt_del_worker_msg</STRONG> (Thumb, 308 bytes, Stack size 312 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 952 + Unknown Stack Size
 <LI>Call Chain = fileopt_del_worker_msg &rArr; fileopt_cnt_worker_pos &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
-<BR>[Calls]<UL><LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
+<BR>[Calls]<UL><LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
 <LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
 <LI><a href="#[20e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_rename
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
@@ -5068,13 +5088,13 @@ Global Symbols
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_del_card_button_del
 </UL>
 
-<P><STRONG><a name="[265]"></a>fileopt_read_total_msg</STRONG> (Thumb, 398 bytes, Stack size 232 bytes, fileopt.o(.text))
+<P><STRONG><a name="[244]"></a>fileopt_read_total_msg</STRONG> (Thumb, 398 bytes, Stack size 232 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 664 + Unknown Stack Size
 <LI>Call Chain = fileopt_read_total_msg &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5085,11 +5105,12 @@ Global Symbols
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<BR>[Called By]<UL><LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 </UL>
 
 <P><STRONG><a name="[266]"></a>fileopt_clear_lastest_data</STRONG> (Thumb, 140 bytes, Stack size 96 bytes, fileopt.o(.text))
@@ -5102,13 +5123,13 @@ Global Symbols
 <LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<BR>[Called By]<UL><LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
 </UL>
 
-<P><STRONG><a name="[24e]"></a>fileopt_set_water_rate</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24f]"></a>fileopt_set_water_rate</STRONG> (Thumb, 118 bytes, Stack size 40 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 472 + Unknown Stack Size
 <LI>Call Chain = fileopt_set_water_rate &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5118,13 +5139,13 @@ Global Symbols
 <LI><a href="#[1c9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymalloc
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_sure
 </UL>
 
-<P><STRONG><a name="[247]"></a>fileopt_get_water_rate</STRONG> (Thumb, 92 bytes, Stack size 32 bytes, fileopt.o(.text))
+<P><STRONG><a name="[248]"></a>fileopt_get_water_rate</STRONG> (Thumb, 92 bytes, Stack size 32 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 464<LI>Call Chain = fileopt_get_water_rate &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
@@ -5139,7 +5160,7 @@ Global Symbols
 <LI><a href="#[17]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_boot_admin_ui_icon_root_setting
 </UL>
 
-<P><STRONG><a name="[24b]"></a>fileopt_add_goods</STRONG> (Thumb, 404 bytes, Stack size 176 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24c]"></a>fileopt_add_goods</STRONG> (Thumb, 404 bytes, Stack size 176 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 608 + Unknown Stack Size
 <LI>Call Chain = fileopt_add_goods &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5153,13 +5174,13 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[21]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_button_sure
 </UL>
 
-<P><STRONG><a name="[24c]"></a>fileopt_del_goods</STRONG> (Thumb, 290 bytes, Stack size 176 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24d]"></a>fileopt_del_goods</STRONG> (Thumb, 290 bytes, Stack size 176 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 608 + Unknown Stack Size
 <LI>Call Chain = fileopt_del_goods &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5172,7 +5193,7 @@ Global Symbols
 <LI><a href="#[106]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2d
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_del_button_del
@@ -5182,7 +5203,7 @@ Global Symbols
 <BR><BR>[Calls]<UL><LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 </UL>
 
-<P><STRONG><a name="[251]"></a>fileopt_set_passwd</STRONG> (Thumb, 152 bytes, Stack size 64 bytes, fileopt.o(.text))
+<P><STRONG><a name="[252]"></a>fileopt_set_passwd</STRONG> (Thumb, 152 bytes, Stack size 64 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 496<LI>Call Chain = fileopt_set_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[201]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_write
@@ -5198,7 +5219,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_pwd_manage_button_sure
 </UL>
 
-<P><STRONG><a name="[245]"></a>fileopt_get_passwd</STRONG> (Thumb, 182 bytes, Stack size 72 bytes, fileopt.o(.text))
+<P><STRONG><a name="[246]"></a>fileopt_get_passwd</STRONG> (Thumb, 182 bytes, Stack size 72 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 504<LI>Call Chain = fileopt_get_passwd &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
@@ -5233,14 +5254,14 @@ Global Symbols
 <LI><a href="#[26a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_f2iz
 </UL>
 
-<P><STRONG><a name="[250]"></a>fileopt_write_bill_to_udev</STRONG> (Thumb, 462 bytes, Stack size 256 bytes, fileopt.o(.text))
+<P><STRONG><a name="[251]"></a>fileopt_write_bill_to_udev</STRONG> (Thumb, 462 bytes, Stack size 256 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 920 + Unknown Stack Size
 <LI>Call Chain = fileopt_write_bill_to_udev &rArr; fileopt_read_total_msg &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
 <BR>[Calls]<UL><LI><a href="#[110]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;RTC_Get
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataBufToUSB
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
 <LI><a href="#[1fa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_open
 <LI><a href="#[212]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_gets
 <LI><a href="#[203]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_close
@@ -5248,16 +5269,16 @@ Global Symbols
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
 <LI><a href="#[1ce]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcpy
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_bill_export
 </UL>
 
-<P><STRONG><a name="[24f]"></a>fileopt_write_list_to_udev</STRONG> (Thumb, 342 bytes, Stack size 232 bytes, fileopt.o(.text))
+<P><STRONG><a name="[250]"></a>fileopt_write_list_to_udev</STRONG> (Thumb, 342 bytes, Stack size 232 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 664 + Unknown Stack Size
 <LI>Call Chain = fileopt_write_list_to_udev &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -5270,9 +5291,9 @@ Global Symbols
 <LI><a href="#[1c7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;myfree
 <LI><a href="#[1c6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemset
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strncmp
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
 <BR>[Called By]<UL><LI><a href="#[2d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_opt_button_list_export
@@ -5286,7 +5307,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[ab]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main_task
 </UL>
 
-<P><STRONG><a name="[24d]"></a>fileopt_copy_flash_to_sd</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, fileopt.o(.text))
+<P><STRONG><a name="[24e]"></a>fileopt_copy_flash_to_sd</STRONG> (Thumb, 2 bytes, Stack size 0 bytes, fileopt.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[28]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_setting_button_restore
 </UL>
 
@@ -5365,8 +5386,8 @@ Global Symbols
 <LI><a href="#[26b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mFlushBufferToDisk
 </UL>
 <BR>[Called By]<UL><LI><a href="#[99]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;tmp
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
 </UL>
 
 <P><STRONG><a name="[9e]"></a>WaitTakeOutUSB</STRONG> (Thumb, 28 bytes, Stack size 8 bytes, ch376_api.o(.text))
@@ -5394,31 +5415,32 @@ Global Symbols
 <LI><a href="#[9d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteDataBufToUSB
 <LI><a href="#[9c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;CloseUSBFile
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[1e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_del_card_control_worker_num
 <LI><a href="#[1d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_control_worker_num
 <LI><a href="#[1b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_add_card_button_readd
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_frame_print_sure
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[268]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_weight_unit
 </UL>
 
@@ -5467,38 +5489,38 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[270]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_printf_char_common
 </UL>
 
-<P><STRONG><a name="[253]"></a>atoi</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, atoi.o(.text))
+<P><STRONG><a name="[254]"></a>atoi</STRONG> (Thumb, 26 bytes, Stack size 16 bytes, atoi.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = atoi &rArr; strtol &rArr; _strtoul
 </UL>
 <BR>[Calls]<UL><LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
 <LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_card_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
 </UL>
 
-<P><STRONG><a name="[256]"></a>strtok</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, strtok.o(.text))
+<P><STRONG><a name="[257]"></a>strtok</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, strtok.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 36<LI>Call Chain = strtok &rArr; __strtok_internal &rArr; strspn
 </UL>
 <BR>[Calls]<UL><LI><a href="#[27a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__strtok_internal
 </UL>
-<BR>[Called By]<UL><LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<BR>[Called By]<UL><LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
 </UL>
 
-<P><STRONG><a name="[264]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
+<P><STRONG><a name="[265]"></a>strstr</STRONG> (Thumb, 36 bytes, Stack size 12 bytes, strstr.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 12<LI>Call Chain = strstr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<BR>[Called By]<UL><LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
 </UL>
 
 <P><STRONG><a name="[1ce]"></a>strcpy</STRONG> (Thumb, 72 bytes, Stack size 12 bytes, strcpy.o(.text))
@@ -5506,44 +5528,44 @@ Global Symbols
 </UL>
 <BR>[Called By]<UL><LI><a href="#[ae]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_card_id
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_init
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
 <LI><a href="#[27]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_setting_button_sure
 <LI><a href="#[f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_opt_button_choose
 <LI><a href="#[1cd]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_typetell
 </UL>
 
-<P><STRONG><a name="[244]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
+<P><STRONG><a name="[245]"></a>strlen</STRONG> (Thumb, 62 bytes, Stack size 8 bytes, strlen.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 8<LI>Call Chain = strlen
 </UL>
 <BR>[Called By]<UL><LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_frame_print_sure
 </UL>
 
-<P><STRONG><a name="[262]"></a>strncmp</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, strncmp.o(.text))
+<P><STRONG><a name="[263]"></a>strncmp</STRONG> (Thumb, 150 bytes, Stack size 16 bytes, strncmp.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = strncmp
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<BR>[Called By]<UL><LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
 </UL>
 
 <P><STRONG><a name="[101]"></a>strcat</STRONG> (Thumb, 24 bytes, Stack size 0 bytes, strcat.o(.text))
@@ -5595,28 +5617,28 @@ Global Symbols
 <LI><a href="#[aa]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_init
 <LI><a href="#[9a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;InitUSB
 <LI><a href="#[266]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_clear_lastest_data
-<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
-<LI><a href="#[25b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
-<LI><a href="#[255]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
-<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
-<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
-<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
-<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
-<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
-<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_1st_2nd_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker
+<LI><a href="#[25c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileope_goods_list_init
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;get_name
+<LI><a href="#[250]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_list_to_udev
+<LI><a href="#[251]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_write_bill_to_udev
+<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_passwd
+<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_read_total_msg
+<LI><a href="#[247]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_work_id
+<LI><a href="#[246]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_passwd
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[252]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
-<LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[248]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_cardid
+<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_create_card
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_pwd_manage_button_sure
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_auth_button_sure
 <LI><a href="#[1f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_del_card_button_del
@@ -5627,6 +5649,7 @@ Global Symbols
 <LI><a href="#[11]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_admin_button_sure
 <LI><a href="#[e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_frame_print_sure
 <LI><a href="#[d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_control_worker_num
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 </UL>
 
 <P><STRONG><a name="[33d]"></a>__aeabi_memclr8</STRONG> (Thumb, 0 bytes, Stack size 4 bytes, rt_memclr_w.o(.text), UNUSED)
@@ -5639,12 +5662,12 @@ Global Symbols
 
 <P><STRONG><a name="[1d0]"></a>strcmp</STRONG> (Thumb, 128 bytes, Stack size 0 bytes, strcmpv7m.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[267]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_get_goods_price
-<LI><a href="#[25d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
-<LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
-<LI><a href="#[263]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
+<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_cnt_worker_pos
+<LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
+<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;search_by_work_id
 <LI><a href="#[243]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_find_worker_msg_by_workid
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[30]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_pwd_manage_button_sure
 <LI><a href="#[2a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_root_auth_button_sure
 <LI><a href="#[25]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_goods_del_button_del
@@ -5669,7 +5692,7 @@ Global Symbols
 <P><STRONG><a name="[278]"></a>__aeabi_errno_addr</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, rt_errno_addr_intlibspace.o(.text))
 <BR><BR>[Called By]<UL><LI><a href="#[28a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;_strtoul
 <LI><a href="#[279]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtol
-<LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 </UL>
 
 <P><STRONG><a name="[344]"></a>__errno$intlibspace</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, rt_errno_addr_intlibspace.o(.text), UNUSED)
@@ -5742,7 +5765,7 @@ Global Symbols
 <LI><a href="#[289]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__rt_ctype_table
 <LI><a href="#[278]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_errno_addr
 </UL>
-<BR>[Called By]<UL><LI><a href="#[253]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
+<BR>[Called By]<UL><LI><a href="#[254]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;atoi
 </UL>
 
 <P><STRONG><a name="[27a]"></a>__strtok_internal</STRONG> (Thumb, 64 bytes, Stack size 24 bytes, strtok_int.o(.text))
@@ -5751,7 +5774,7 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[28b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strspn
 <LI><a href="#[28c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcspn
 </UL>
-<BR>[Called By]<UL><LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<BR>[Called By]<UL><LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 </UL>
 
 <P><STRONG><a name="[347]"></a>__user_libspace</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, libspace.o(.text), UNUSED)
@@ -5989,12 +6012,12 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[10d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Weight_QuPi
 <LI><a href="#[104]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;Read_Weight_Val
 <LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_weight
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
-<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
-<LI><a href="#[24e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
-<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
-<LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<LI><a href="#[24f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_water_rate
+<LI><a href="#[24d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_goods
+<LI><a href="#[24c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_goods
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 </UL>
 
@@ -6006,8 +6029,8 @@ Global Symbols
 <P><STRONG><a name="[238]"></a>__aeabi_fadd</STRONG> (Thumb, 0 bytes, Stack size 16 bytes, faddsub_clz.o(x$fpl$fadd))
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fadd
 </UL>
-<BR>[Called By]<UL><LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
-<LI><a href="#[25e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
+<BR>[Called By]<UL><LI><a href="#[260]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_worker_product_msg
+<LI><a href="#[25f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_update_msg
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 </UL>
 
@@ -6057,6 +6080,7 @@ Global Symbols
 <P><STRONG><a name="[236]"></a>__aeabi_i2f</STRONG> (Thumb, 0 bytes, Stack size 0 bytes, fflt_clz.o(x$fpl$fflt))
 <BR><BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_weight
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_init
+<LI><a href="#[b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_total
 <LI><a href="#[9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_click_work_button_flay
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 </UL>
@@ -6087,7 +6111,7 @@ Global Symbols
 <BR><BR>[Stack]<UL><LI>Max Depth = 16<LI>Call Chain = __aeabi_fmul
 </UL>
 <BR>[Called By]<UL><LI><a href="#[af]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;lcdopt_printf_weight
-<LI><a href="#[261]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
+<LI><a href="#[262]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_add_worker_msg
 <LI><a href="#[235]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;string_to_float
 </UL>
 
@@ -6608,22 +6632,22 @@ Local Symbols
 <LI><a href="#[214]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;f_putc
 </UL>
 
-<P><STRONG><a name="[259]"></a>__set_current_price</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fileopt.o(.text), UNUSED)
-<BR><BR>[Called By]<UL><LI><a href="#[258]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
+<P><STRONG><a name="[25a]"></a>__set_current_price</STRONG> (Thumb, 8 bytes, Stack size 0 bytes, fileopt.o(.text), UNUSED)
+<BR><BR>[Called By]<UL><LI><a href="#[259]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_set_current_price
 </UL>
 
-<P><STRONG><a name="[255]"></a>get_name</STRONG> (Thumb, 124 bytes, Stack size 96 bytes, fileopt.o(.text))
+<P><STRONG><a name="[256]"></a>get_name</STRONG> (Thumb, 124 bytes, Stack size 96 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 132<LI>Call Chain = get_name &rArr; strtok &rArr; __strtok_internal &rArr; strspn
 </UL>
 <BR>[Calls]<UL><LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 </UL>
-<BR>[Called By]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
+<BR>[Called By]<UL><LI><a href="#[24b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_del_worker_msg
 </UL>
 
-<P><STRONG><a name="[263]"></a>search_by_work_id</STRONG> (Thumb, 268 bytes, Stack size 200 bytes, fileopt.o(.text))
+<P><STRONG><a name="[264]"></a>search_by_work_id</STRONG> (Thumb, 268 bytes, Stack size 200 bytes, fileopt.o(.text))
 <BR><BR>[Stack]<UL><LI>Max Depth = 632 + Unknown Stack Size
 <LI>Call Chain = search_by_work_id &rArr; f_open &rArr; dir_register &rArr; dir_find &rArr; dir_next &rArr; create_chain &rArr; put_fat &rArr; move_window &rArr; sync_window &rArr; disk_write &rArr; SPI_Flash_Write &rArr; SPI_Flash_Write_NoCheck &rArr; SPI_Flash_Write_Page &rArr; SPI_Flash_Wait_Busy &rArr; SPI_Flash_ReadSR &rArr; SPI1_ReadWriteByte
 </UL>
@@ -6636,12 +6660,12 @@ Local Symbols
 <LI><a href="#[1cc]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;mymemcpy
 <LI><a href="#[1d0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strcmp
 <LI><a href="#[f0]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__aeabi_memclr4
-<LI><a href="#[244]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
-<LI><a href="#[264]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
-<LI><a href="#[256]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
+<LI><a href="#[245]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strlen
+<LI><a href="#[265]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strstr
+<LI><a href="#[257]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;strtok
 <LI><a href="#[242]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;__2sprintf
 </UL>
-<BR>[Called By]<UL><LI><a href="#[249]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
+<BR>[Called By]<UL><LI><a href="#[24a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;fileopt_reapply_card_by_work_id
 </UL>
 
 <P><STRONG><a name="[29e]"></a>_dadd1</STRONG> (Thumb, 0 bytes, Stack size unknown bytes, daddsub_clz.o(x$fpl$dadd), UNUSED)
