@@ -113,7 +113,131 @@ int InitUSB(void)
 	//printf( "free cap = %ld MB\n", *(PUINT32)buf / ( 1000000 / DEF_SECTOR_SIZE ) );  /* 上面一行的计算可能会溢凿换个顺序计算 */
 }
 
-int OpenUSBFile(PUINT8 FileName)
+/* 为指定文件设置修改日期和时间 */
+/* 输入参数:   原始文件名在iFileName中, 新的修改日期和时间: iCreateDate, iCreateTime */
+/* 返回状态码: 1 = 设置成功,
+               0 = 设置失败 */
+int	SetFileWriteTime( PUINT8 iFileName, UINT16 iCreateDate, UINT16 iCreateTime )
+{
+	UINT8	s;
+	UINT8 addr_offset = 0;
+	UINT8 buf[4] = {0};
+	int ret = 0;
+
+	if(iFileName){
+		s = CH376FileOpen( iFileName );  /* 打开文件 */
+		ret = mStopIfError( s );
+		if(!ret){
+			return 0;
+		}
+	}
+
+	s = CH376DirInfoRead( );  /* 读取当前文件的目录信息FAT_DIR_INFO,将相关数据调到内存中 */
+	ret = mStopIfError( s );
+	if ( ret == 1 ) {
+		buf[0] = (UINT8)iCreateTime;  /* 文件创建的时间,低8位在前 */
+		buf[1] = (UINT8)(iCreateTime>>8);  /* 文件创建的时间,高8位在后 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_WrtTime ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_WrtTime写入2个字节 */
+		buf[0] = (UINT8)iCreateDate;  /* 文件创建的日期,低8位在前 */
+		buf[1] = (UINT8)(iCreateDate>>8);  /* 文件创建的日期,高8位在后 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_WrtDate ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_WrtDate写入2个字节 */
+		s = CH376DirInfoSave( );  /* 保存文件的目录信息 */
+		ret = mStopIfError( s );
+		if ( ret == 1 ) {  /* 成功修改并保存 */
+			if(iFileName){
+				s = CH376FileClose( FALSE );  /* 关闭文件 */
+				ret = mStopIfError( s );
+				if(ret == 0){
+					return 0;
+				}
+			}
+			return 1;
+		}else{  /*修改失败*/
+			return 0;
+		}
+	}else{  /*读取目录信息失败*/
+		if(iFileName){
+			CH376FileClose( FALSE );  /* 关闭文件 */
+		}
+		return 0;
+	}
+}
+
+/* 为指定文件设置创建日期和时间 */
+/* 输入参数:   原始文件名在iFileName中, 新的创建日期和时间: iCreateDate, iCreateTime */
+/* 返回状态码: 1 = 设置成功,
+               0 = 设置失败 */
+int	SetFileCreateTime( PUINT8 iFileName, UINT16 iCreateDate, UINT16 iCreateTime )
+{
+	UINT8	s;
+	UINT8 addr_offset = 0;
+	UINT8 buf[4] = {0};
+	int ret = 0;
+
+	if(iFileName){
+		s = CH376FileOpen( iFileName );  /* 打开文件 */
+		ret = mStopIfError( s );
+		if(!ret){
+			return 0;
+		}
+	}
+
+	s = CH376DirInfoRead( );  /* 读取当前文件的目录信息FAT_DIR_INFO,将相关数据调到内存中 */
+	ret = mStopIfError( s );
+	if ( ret == 1 ) {
+		buf[0] = (UINT8)iCreateTime;  /* 文件创建的时间,低8位在前 */
+		buf[1] = (UINT8)(iCreateTime>>8);  /* 文件创建的时间,高8位在后 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_CrtTime ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_CrtTime写入2个字节 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_WrtTime ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_WrtTime写入2个字节 */
+		buf[0] = (UINT8)iCreateDate;  /* 文件创建的日期,低8位在前 */
+		buf[1] = (UINT8)(iCreateDate>>8);  /* 文件创建的日期,高8位在后 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_CrtDate ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_CrtDate写入2个字节 */
+		addr_offset = (UINT8)(MY_STRUCT_OFFSET( FAT_DIR_INFO, DIR_WrtDate ) & 0xFF);
+		CH376WriteOfsBlock( buf, addr_offset, 2 );  /* 向内部缓冲区偏移地址DIR_WrtDate写入2个字节 */
+		s = CH376DirInfoSave( );  /* 保存文件的目录信息 */
+		ret = mStopIfError( s );
+		if ( ret == 1 ) {  /* 成功修改并保存 */
+			if(iFileName){
+				s = CH376FileClose( FALSE );  /* 关闭文件 */
+				ret = mStopIfError( s );
+				if(ret == 0){
+					return 0;
+				}
+			}
+			return 1;
+		}else{  /*修改失败*/
+			return 0;
+		}
+	}else{  /*读取目录信息失败*/
+		if(iFileName){
+			CH376FileClose( FALSE );  /* 关闭文件 */
+		}
+		return 0;
+	}
+}
+
+int CreateUSBFile(PUINT8 FileName)
+{
+	UINT8	s = 0;
+	int ret = 0;
+
+	s = CH376FileCreate( FileName );  /* 新建文件并打开,如果文件已经存在则先删除后再新建,不必再提供文件名,刚才已经提供给CH376FileOpen */
+	ret = mStopIfError( s );
+	total = 0;  /* 此前没有零头数据 */
+	
+	if(!ret){
+		return 0;
+	}else{
+		return 1;
+	}
+}
+
+int OpenUSBFile(PUINT8 FileName, UINT32 year, UINT32 month, UINT32 date, UINT32 hour, UINT32 minute)
 {
 	UINT8	s = 0;
 	UINT32 NewSize = 0;
@@ -155,6 +279,11 @@ int OpenUSBFile(PUINT8 FileName)
 		if(!ret){
 			return 0;
 		}else{
+			/* 为指定文件设置创建日期和时间 */
+			ret = SetFileCreateTime(NULL, MAKE_FILE_DATE( year, month, date ), MAKE_FILE_TIME( hour, minute, 30 ));
+			if(!ret){
+				return 0; /*操作失败*/
+			}
 			return 1;
 		}
 	}
