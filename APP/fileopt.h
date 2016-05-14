@@ -72,6 +72,12 @@ s32 fileopt_get_price_comlum(char *comlum);
 
 s32 fileopt_update_account(char *card_id);
 
+int fileopt_set_work_goods(char *goods_name);
+
+int fileopt_get_work_goods(char *goods_name);
+
+int fileopt_del_work_goods(void);
+
 int fileopt_write_bill_to_udev(void);
 
 int fileopt_write_list_to_udev(void);

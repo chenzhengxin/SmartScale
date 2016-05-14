@@ -1109,8 +1109,8 @@
       <Focus>0</Focus>
       <ColumnNumber>0</ColumnNumber>
       <tvExpOptDlg>0</tvExpOptDlg>
-      <TopLine>133</TopLine>
-      <CurrentLine>139</CurrentLine>
+      <TopLine>384</TopLine>
+      <CurrentLine>397</CurrentLine>
       <bDave2>0</bDave2>
       <PathWithFileName>..\APP\lcdopt.c</PathWithFileName>
       <FilenameWithoutPath>lcdopt.c</FilenameWithoutPath>

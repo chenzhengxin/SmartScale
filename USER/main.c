@@ -85,8 +85,8 @@ void system_init(void)
 	f_mount(fs[0],"0:",1);	//π“‘ÿSDø® 
  	f_mount(fs[1],"1:",1); 	//π“‘ÿFLASH
 	//AD_GPIO_Configuration();
-	lcdopt_init();
 	fileopt_init();
+	lcdopt_init();
 }
 
 #if  1

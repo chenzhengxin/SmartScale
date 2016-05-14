@@ -8,6 +8,16 @@
 
 #define CONTROL_NUM  45
 
+#define WORKER_NUM   "工号: "
+#define WORKER_NAME  "姓名: "
+#define WEIGHT_UNIT  "单位: "
+#define COMPANY_NAME "         智能称"
+#define TITLE_NAME   "        对 账 单"
+#define LINE_FORMAT  "--------------------------"
+#define FORM_LINE_FORMAT "物种   单价    重量   总价"
+#define CUR_TOTAL_PRICE_LINE_FORMAT  "本期总价: "
+#define CUR_TOTAL_WEIGHT_LINE_FORMAT "本期总重量: "
+
 void lcdopt_click_bootui_icon_work(void);
 void lcdopt_click_bootui_icon_admin(void);
 void lcdopt_click_work_button_goods_choose(void);
@@ -147,7 +157,7 @@ void lcdopt_show_del_goods_list()
 			j++;
 		}
 		EzUI_StringEdit_SetString(GOODS_DEL_CONTROL_GOODS_TYPE_1+i,list->goods[j].goods_name);
-		EzUI_NumberEdit_SetVarFloat(GOODS_DEL_CONTROL_GOODS_UNIT_PRICE_1+i,list->goods[j].price);
+		EzUI_NumberEdit_SetVarFloat(GOODS_DEL_CONTROL_GOODS_UNIT_PRICE_1+i, list->goods[j].price * 2);
 		j++;
 	}
 }
@@ -166,8 +176,8 @@ void lcdopt_show_choose_goods_list()
        	{
 			j++;
 		}
-		EzUI_StringEdit_SetString(GOODS_OPT_CONTROL_GOODS_TYPE_1+i,list->goods[j].goods_name);
-		EzUI_NumberEdit_SetVarFloat(GOODS_OPT_CONTROL_GOODS_UNIT_PRICE_1+i,list->goods[j].price);
+		EzUI_StringEdit_SetString(GOODS_OPT_CONTROL_GOODS_TYPE_1+i, list->goods[j].goods_name);
+		EzUI_NumberEdit_SetVarFloat(GOODS_OPT_CONTROL_GOODS_UNIT_PRICE_1+i, list->goods[j].price * 2);
 		j++;
 	}
 }
@@ -325,6 +335,9 @@ void lcdopt_click_work_button_total(void)
 		fileopt_read_total_msg(card_id, &msg);
 		price = string_to_float(msg.total_price);
 		weight = string_to_float(msg.total_weight);
+		if (!strcmp(lcdopt_mgr_str.weight_unit, "市斤")){
+			weight = weight * 2;
+		}
 		EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_WEIGHT_VAL, weight);
 		EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_TOTAL_PRICE, price);
 	} else {
@@ -370,15 +383,39 @@ void lcdopt_click_work_frame_print_sure(void)
 {
     int i = 0; 
 	int len = 0;
-	char paste_buf[20] = {0};
+	int worker_num = 0;
+	float weight = 0.0;
+	float total_price = 0.0;
+	char msg[64] = {0}; 
+	char worker_name[20] = {0};
+	char *paste_buf = NULL;
+	unsigned char name_len = 0;
 
-	sprintf(paste_buf," 智能称\n");
-    len = strlen(paste_buf);
+	EzUI_NumberEdit_ReadVarInt(WORK_CONTROL_WORKER_NUM, &worker_num);
+	EzUI_StringEdit_ReadString(WORK_CONTROL_WORKER_NAME, worker_name, &name_len);
+	EzUI_NumberEdit_ReadVarFloat(WORK_CONTROL_WEIGHT_VAL, &weight);
+	EzUI_NumberEdit_ReadVarFloat(WORK_CONTROL_TOTAL_PRICE, &total_price);
+	
+	paste_buf = (char *)mymalloc(1024);
+	mymemset(paste_buf, 0, 1024);
+	sprintf(paste_buf, "%s\n%s\n%s\n%d\n%s\n%s\n%s\n%s\n%s\n%s\n%s\n", 
+		COMPANY_NAME, TITLE_NAME, WORKER_NUM, worker_num, WORKER_NAME, 
+		worker_name, WEIGHT_UNIT, lcdopt_mgr_str.weight_unit,LINE_FORMAT, 
+		FORM_LINE_FORMAT, LINE_FORMAT);
+
+	sprintf(msg, "%s   %0.02f   %0.02f  %0.02f", lcdopt_mgr_str.cur_goods,
+		lcdopt_mgr_str.cur_unit_price, weight, total_price);
+
+	sprintf(paste_buf, "%s%s\n\n\n", paste_buf, msg);
+
+	len = strlen(paste_buf);
 	for(i=0;i<len;i++)
     {
         USART2->DR=paste_buf[i];
 	    while((USART2->SR&0X40)==0);
     } 
+
+	UART_DMA_Tx_Enable();
 }
 
 /*goods opt ui callback func*/
@@ -405,6 +442,8 @@ void lcdopt_click_goods_opt_button_choose(void)
 			EzUI_NumberEdit_ReadVarFloat(GOODS_OPT_CONTROL_GOODS_UNIT_PRICE_1+i, &cur_price);
 			strcpy(lcdopt_mgr_str.cur_goods, goods_name);
 			lcdopt_mgr_str.cur_unit_price = cur_price;
+			fileopt_set_work_goods(goods_name);
+			fileopt_set_current_price(goods_name);
 			EzUI_SetNowActiveGui(OPT_OK_WARNING_INDEX);
 			break;
 		}
@@ -689,6 +728,10 @@ void lcdopt_click_goods_button_sure(void)
     EzUI_StringEdit_ReadString(GOODS_ADD_CONTROL_TYPE, goods_name, &len);
     EzUI_NumberEdit_ReadVarFloat(GOODS_ADD_CONTROL_UNIT_PRICE, &unit_price);
 
+	if (!strcmp(lcdopt_mgr_str.weight_unit, "市斤")) {
+		unit_price = unit_price * 2;
+	}
+
     if (fileopt_add_goods(goods_name, &unit_price))
    	{
 		EzUI_SetNowActiveGui(OPT_FAIL_WARNING_INDEX);
@@ -755,6 +798,7 @@ void lcdopt_click_goods_del_button_del(void)
 				if (!strcmp(lcdopt_mgr_str.cur_goods, goods_name)) {
 					strcpy(lcdopt_mgr_str.cur_goods, " ");
 					lcdopt_mgr_str.cur_unit_price = 0;
+					fileopt_del_work_goods();
 				}
 				
 				break;
@@ -810,10 +854,19 @@ void lcdopt_click_setting_button_sure(void)
 
 	if (sel_buf == LCDOPT_GONGJIN) {
 		strcpy(lcdopt_mgr_str.weight_unit, "公斤");
+
+		if (fileopt_get_weight_unit() == LCDOPT_JIN) {
+			lcdopt_mgr_str.cur_unit_price = lcdopt_mgr_str.cur_unit_price / 2;
+		}
 	} else if (sel_buf == LCDOPT_JIN) {
 		strcpy(lcdopt_mgr_str.weight_unit, "市斤");
+
+		if (fileopt_get_weight_unit() == LCDOPT_GONGJIN) {
+			lcdopt_mgr_str.cur_unit_price = lcdopt_mgr_str.cur_unit_price * 2;
+		}
 	}
 
+	fileopt_set_weight_unit(sel_buf);
 	EzUI_SetNowActiveGui(OPT_OK_WARNING_INDEX);
     UART_DMA_Tx_Enable();
 }
@@ -1105,7 +1158,12 @@ int lcdopt_printf_weight(void)
 
 
 	weight_val = Read_Weight_Val(lcdopt_mgr_str.ad_show_pi);
-    total_val = weight_val * lcdopt_mgr_str.cur_unit_price;
+	if (!strcmp(lcdopt_mgr_str.weight_unit, "市斤")) {
+		weight_val = weight_val * 2;
+	}
+
+	weight_val = weight_val * lcdopt_mgr_str.cur_rate;
+	total_val = weight_val * lcdopt_mgr_str.cur_unit_price;
 	
 	EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_WEIGHT_VAL,weight_val);
 	EzUI_NumberEdit_SetVarFloat(WORK_CONTROL_TOTAL_PRICE,total_val);
@@ -1138,13 +1196,33 @@ void lcdopt_main(void)
 
 void lcdopt_init(void)
 {
-   unsigned char *weight_unit = "公斤";
+    int   weight_type = 0;
+	char  goods_name[20] = {0};
+	float goods_unit_price = 0.0;
+   	
+    lcdopt_mgr_str.cur_worker_num = fileopt_get_work_id();
+    lcdopt_mgr_str.cur_icon_index = BOOT_UI_INDEX;
+    lcdopt_mgr_str.ad_show_pi = Weight_QuPi();
+    lcdopt_mgr_str.user = LCDOPT_NONE;
+   
+    fileopt_get_water_rate(&(lcdopt_mgr_str.cur_rate));
+    weight_type = fileopt_get_weight_unit();
+    if (weight_type == 0) {
+        strcpy(lcdopt_mgr_str.weight_unit, "公斤");
+    } else {
+        strcpy(lcdopt_mgr_str.weight_unit, "市斤");
+    }
 
-   lcdopt_mgr_str.cur_worker_num = fileopt_get_work_id();
-   lcdopt_mgr_str.cur_icon_index = BOOT_UI_INDEX;
-   lcdopt_mgr_str.ad_show_pi = Weight_QuPi();
-   lcdopt_mgr_str.cur_unit_price = 0;
-   lcdopt_mgr_str.user = LCDOPT_NONE;
-   fileopt_get_water_rate(&(lcdopt_mgr_str.cur_rate));
-   strcpy(lcdopt_mgr_str.weight_unit, weight_unit);
+	if (fileopt_get_work_goods(goods_name)) {
+		lcdopt_mgr_str.cur_unit_price = 0;
+	} else {
+		strcpy(lcdopt_mgr_str.cur_goods, goods_name);
+		fileopt_set_current_price(goods_name);
+		fileopt_get_goods_price(goods_name, &goods_unit_price);
+		if (weight_type == 0) {
+			lcdopt_mgr_str.cur_unit_price = goods_unit_price;
+		} else {
+			lcdopt_mgr_str.cur_unit_price = goods_unit_price * 2;
+		}
+	}
 }

@@ -1852,6 +1852,8 @@ int fileopt_get_weight_unit()
 		f_gets(buf, sizeof(buf), weight_file);
 		ret = (int)string_to_float(buf);
 		f_close(weight_file);
+	} else {
+		ret = 0;
 	}
 
 
@@ -1863,6 +1865,104 @@ TAR_OUT:
 	}
 	return ret;
 }
+
+int fileopt_set_work_goods(char *goods_name)
+{
+	FIL *work_goods_file = NULL;
+	int ret;
+	UINT bw;
+
+	work_goods_file = (FIL *)mymalloc(sizeof(FIL));
+	if (work_goods_file == NULL)
+	{
+		ret = FILEOPT_MALLOC_ERR;
+		goto TAR_OUT;
+	}	
+
+	ret = f_open(work_goods_file, "0:work/work_goods", FA_CREATE_ALWAYS | FA_WRITE);
+	if (ret == 0)
+	{
+		f_write(work_goods_file, goods_name, strlen(goods_name), &bw);
+		f_close(work_goods_file);
+	}
+
+
+TAR_OUT:
+
+	if (work_goods_file != NULL)
+	{
+		myfree(work_goods_file);
+	}
+	return ret;
+}
+
+
+int fileopt_get_work_goods(char *goods_name)
+{
+	FIL *work_goods_file = NULL;
+	int ret;
+	char buf[2];
+
+	work_goods_file = (FIL *)mymalloc(sizeof(FIL));
+	if (work_goods_file == NULL)
+	{
+		ret = FILEOPT_MALLOC_ERR;
+		goto TAR_OUT;
+	}	
+
+	ret = f_open(work_goods_file, "0:work/work_goods", FA_READ);
+	if (ret == 0)
+	{
+		f_gets(buf, sizeof(buf), work_goods_file);
+		strcpy(goods_name, buf);
+		f_close(work_goods_file);
+	} else {
+		ret = FILEOPT_NOT_FOUND;
+	}
+
+
+TAR_OUT:
+
+	if (work_goods_file != NULL)
+	{
+		myfree(work_goods_file);
+	}
+	return ret;
+}
+
+
+int fileopt_del_work_goods(void)
+{
+	FIL *work_goods_file = NULL;
+	int ret;
+
+	work_goods_file = (FIL *)mymalloc(sizeof(FIL));
+	if (work_goods_file == NULL)
+	{
+		ret = FILEOPT_MALLOC_ERR;
+		goto TAR_OUT;
+	}	
+
+	ret = f_open(work_goods_file, "0:work/work_goods", FA_READ);
+	if (ret == 0)
+	{
+		f_close(work_goods_file);
+		f_unlink("0:work/work_goods");
+	} else {
+		ret = FILEOPT_NOT_FOUND;
+	}
+
+
+TAR_OUT:
+
+	if (work_goods_file != NULL)
+	{
+		myfree(work_goods_file);
+	}
+	return ret;
+}
+ 
+
 
 int fileopt_write_bill_to_udev()
 {
@@ -2064,3 +2164,4 @@ int fileopt_copy_flash_to_sd(void)
 {
 	
 }
+
