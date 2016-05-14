@@ -26,6 +26,8 @@
 
 #define	STRUCT_OFFSET( s, m )	( (UINT8)( & ((s *)0) -> m ) )	/* 定义获取结构成员相对偏移地址的宏 */
 
+#define	MY_STRUCT_OFFSET( s, m )	( (UINT32)( & ((s *)0) -> m ) )	/* 定义获取结构成员相对偏移地址的宏 */
+
 #ifdef	EN_LONG_NAME
 #ifndef	LONG_NAME_BUF_LEN
 #define	LONG_NAME_BUF_LEN	( LONG_NAME_PER_DIR * 20 )	/* 自行定义的长文件名缓冲区长度,最小值为LONG_NAME_PER_DIR*1 */
