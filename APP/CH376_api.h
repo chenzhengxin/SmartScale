@@ -15,7 +15,10 @@
 extern int InitUSB(void);
 extern int WriteDataBufToUSB(char *DataBuf);
 extern void WaitTakeOutUSB(void);
-extern int OpenUSBFile(PUINT8 FileName);
+extern OpenUSBFile(PUINT8 FileName, UINT32 year, UINT32 month, UINT32 date, UINT32 hour, UINT32 minute);
+extern int CreateUSBFile(PUINT8 FileName);
+extern int	SetFileCreateTime( PUINT8 iFileName, UINT16 iCreateDate, UINT16 iCreateTime );
+extern int	SetFileWriteTime( PUINT8 iFileName, UINT16 iCreateDate, UINT16 iCreateTime );
 extern int CloseUSBFile(void);
 
 #endif
