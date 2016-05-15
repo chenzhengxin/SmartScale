@@ -176,6 +176,7 @@ typedef struct
 	float cur_rate;
     float cur_unit_price;
     float ad_show_pi;
+	float last_weight;
 	char card_id[20];
 	unsigned char weight_unit[10];
 	unsigned char cur_goods[20];

@@ -1837,7 +1837,7 @@ int fileopt_get_weight_unit()
 {
 	FIL *weight_file = NULL;
 	int ret;
-	char buf[2];
+	char buf[10] = {0};
 
 	weight_file= (FIL *)mymalloc(sizeof(FIL));
 	if (weight_file == NULL)
@@ -1846,7 +1846,7 @@ int fileopt_get_weight_unit()
 		goto TAR_OUT;
 	}	
 
-	ret = f_open(weight_file, "0:work/weight_unit", FA_READ);
+	ret = f_open(weight_file, "0:work/weight_unit", FA_OPEN_ALWAYS | FA_READ);
 	if (ret == 0)
 	{
 		f_gets(buf, sizeof(buf), weight_file);
@@ -1901,7 +1901,7 @@ int fileopt_get_work_goods(char *goods_name)
 {
 	FIL *work_goods_file = NULL;
 	int ret;
-	char buf[2];
+	char buf[20] = {0};
 
 	work_goods_file = (FIL *)mymalloc(sizeof(FIL));
 	if (work_goods_file == NULL)
@@ -1910,7 +1910,7 @@ int fileopt_get_work_goods(char *goods_name)
 		goto TAR_OUT;
 	}	
 
-	ret = f_open(work_goods_file, "0:work/work_goods", FA_READ);
+	ret = f_open(work_goods_file, "0:work/work_goods", FA_OPEN_ALWAYS | FA_READ);
 	if (ret == 0)
 	{
 		f_gets(buf, sizeof(buf), work_goods_file);

@@ -2,5 +2,5 @@
 
 void AD_GPIO_Configuration(void);
 unsigned long Read_HX711(void);
-float Weight_QuPi(void);
-float Read_Weight_Val(float AD_data_pi);
+void Weight_QuPi(float *ad_show_pi);
+void Read_Weight_Val(float *AD_show_pi, float *weight);

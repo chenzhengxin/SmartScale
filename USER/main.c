@@ -40,35 +40,6 @@ void main_task(void *pdata);
 
 float g_ad_show_pi = 0.0;
 
-void tmp()
-{
-	unsigned char *list_name = "/智能秤.TXT";
-
-	if (!InitUSB()) {
-		goto TAG_OUT;
-	}
-
-	if (!OpenUSBFile((PUINT8)list_name))
-	{
-		CloseUSBFile();
-		goto TAG_OUT;
-	}
-
-	if (!WriteDataBufToUSB("cdhbsvfdjhvf"))
-	{
-		CloseUSBFile();
-		goto TAG_OUT;
-	}
-
-	if (!CloseUSBFile()) {
-		goto TAG_OUT;
-	}
-	WaitTakeOutUSB();
-
-TAG_OUT:
-	return ;
-}
-
 
 //系统初始化
 void system_init(void)
@@ -84,7 +55,7 @@ void system_init(void)
 	RTC_Init();
 	f_mount(fs[0],"0:",1);	//挂载SD卡 
  	f_mount(fs[1],"1:",1); 	//挂载FLASH
-	//AD_GPIO_Configuration();
+	AD_GPIO_Configuration();
 	fileopt_init();
 	lcdopt_init();
 }
